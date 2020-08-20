@@ -1,0 +1,41 @@
+/*global element styles*/
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: grey;
+}
+
+/*anims*/
+
+/*navbar*/
+.navbar-fixed {
+    position: fixed;
+    background-color: #1C1C1C;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+
+}
+
+.navbar-fixed a {
+    color: red;
+    font: 24px solid;
+    font-family: 'Trebuchet MS';
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 20px;
+
+    transition: background-color 0.16s linear, color 0.16s linear;
+}
+
+.navbar-fixed a:hover {
+    color: cyan;
+    background-color: green;
+}
+
+.vr {
+    height: 50%;
+    border-left: 1px;
+}

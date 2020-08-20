@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body id = "body">
+	<button onclick="runProgram()">Run Program</button>
+	<script>
+	var runProgram = function() {
+		var compilerInput = document.getElementById("frigidScriptInput").value;
+		compileFrigidScript(compilerInput);
+	}
+	</script>
+	<textarea rows = "20" cols = "60" name = "description" id = "frigidScriptInput"></textarea><br>
+	<p id="errors"></p>
+	<canvas id="fsCanvas" width="640" height="360"></canvas>
+	<script src = "scripts/functions.js"></script>
+	<script src = "scripts/compiler.js"></script>
+	<script src = "scripts/fsSetup.js"></script>
+	<script src = "scripts/fsFunctions.js"></script>
+	<script>fill("black");</script>
+	<script id = "frigidScriptProgram"></script>
+</body>
+</html>
